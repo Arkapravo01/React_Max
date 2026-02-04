@@ -17,7 +17,7 @@ function App() {
     setModalIsOpen(true);
     selectedPlace.current = place;
   }
-
+  
   function handleStopRemovePlace() {
     setModalIsOpen(false);
   }
