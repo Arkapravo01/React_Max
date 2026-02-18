@@ -19,10 +19,10 @@ export function UserProgressContextProvider({ children }) {
     setUserProgress("");
   }
 
-  function showCheckout(){
+  function showCheckOut(){
     setUserProgress('checkout')
   }
-  function hideCheckout(){
+  function hideCheckOut(){
     setUserProgress('')
   }
 
@@ -30,8 +30,8 @@ export function UserProgressContextProvider({ children }) {
     progress: userProgress,
     showCart,
     hideCart,
-    showCheckout,
-    hideCheckout
+    showCheckOut,
+    hideCheckOut
   }
 
   return (
