@@ -10,7 +10,7 @@ const ErrorPage = () => {
   let message = "Something went wrong";
 
   if (error.status === 500) {
-    message = JSON.parse(error.data).message;
+    message = error.data?.message || "Server error";
   }
 
   if (error.status === 404) {
@@ -20,7 +20,7 @@ const ErrorPage = () => {
 
   return (
     <>
-    <MainNavigation/>
+      <MainNavigation />
       <PageContent title={title}>
         <p>{message}</p>
       </PageContent>
